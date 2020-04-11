@@ -20,9 +20,11 @@ app = Flask(__name__)
 path = Path("path")
 classes = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
 # depricated use DataBunch.load_empty
-data2 = ImageDataBunch.single_from_classes(path, classes, tfms=get_transforms(), size=224).normalize(imagenet_stats)
-learn = create_cnn(data2, models.resnet34)
-learn.load('model_9086')
+data2 = ImageDataBunch.single_from_classes(path, classes, ds_tfms=get_transforms(), size=224).normalize(imagenet_stats)
+# learn = create_cnn(data2, models.resnet34)
+# learn.load('model_9086')
+path1 = Path("./path/models")
+learn = load_learner(path1, 'export.pkl')
 
 
 def model_predict(img_path):
@@ -55,6 +57,7 @@ def upload():
 
         # Make prediction
         preds = model_predict(file_path)
+        preds = str(preds)
         return preds
     return None
 
