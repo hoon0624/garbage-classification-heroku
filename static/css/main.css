@@ -23,7 +23,7 @@ input[type="file"] {
 .upload-label{
     display: inline-block;
     padding: 12px 30px;
-    background: #8fe9a3;
+    background: #ffc107;
     color: #fff;
     font-size: 1em;
     transition: all .4s;
@@ -42,9 +42,41 @@ input[type="file"] {
     width: 50px;
     height: 50px;
     animation: spin 1s linear infinite;
+
+    /* changes */
+    top: 300px;
+    left: 320px;
+    position: relative;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* changes */
+.image-section{
+    display: flex;
+    justify-content: center;
+}
+
+.btn btn-primary btn-lg {
+    position: relative;
+    top: 350px;
+}
+
+#upload-file{
+    display: flex;
+    justify-content: center;
+}
+
+#result{
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 300px;
+}
+
+.upload-txt{
+    text-align: center;
 }
