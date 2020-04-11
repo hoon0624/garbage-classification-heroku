@@ -1,7 +1,5 @@
 fastai==1.0.60
 Flask==1.1.2
-numpy==1.18.1
-pandas==1.0.3
-torch==1.4.0
+# torch==1.4.0
 torchvision==0.5.0
 Werkzeug==1.0.1
