@@ -101,9 +101,12 @@ input[type="file"] {
     /* position: relative; */
 }
 
+.recycle-icon{
+    z-index: -1;
+}
+
 .resize-icon{
     width:  100px;
     height: auto;
     z-index: -1;
-    position: absolute;
 }
