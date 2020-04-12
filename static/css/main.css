@@ -23,11 +23,16 @@ input[type="file"] {
 .upload-label{
     display: inline-block;
     padding: 12px 30px;
-    background: #ffc107;
+    background: #8fe9a3;
     color: #fff;
     font-size: 1em;
     transition: all .4s;
     cursor: pointer;
+
+    /* change */
+    position: relative;
+    top: 30px;
+    margin-bottom: 14px;
 }
 
 .upload-label:hover{
@@ -44,8 +49,8 @@ input[type="file"] {
     animation: spin 1s linear infinite;
 
     /* changes */
-    top: 300px;
-    left: 320px;
+    top: 205px;
+    left: 47.7%;
     position: relative;
 }
 
@@ -55,14 +60,21 @@ input[type="file"] {
 }
 
 /* changes */
-.image-section{
-    display: flex;
-    justify-content: center;
+.upload-text{
+    text-align: center;
 }
 
-.btn btn-primary btn-lg {
+.image-section{
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.predict-btn{
     position: relative;
-    top: 350px;
+    /* top: 80px; */
+    left: 50%;
+    transform:  translate(-50%, 420%);
 }
 
 #upload-file{
@@ -74,9 +86,22 @@ input[type="file"] {
     position: relative;
     display: block;
     text-align: center;
-    top: 300px;
+    top: 190px;
 }
 
-.upload-txt{
+.resize-bin{
+    width: 340px;
+    height: auto;
+}
+
+.recycle-bin{
     text-align: center;
+    z-index: -1;
+    bottom: 57px;
+    /* position: relative; */
+}
+
+.resize-icon{
+    width:  100px;
+    height: auto;
 }

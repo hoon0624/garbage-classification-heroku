@@ -1,8 +1,19 @@
-.upload-txt{
+.upload-text{
     text-align: center;
+}
+
+#upload-file{
+    display: flex;
+    justify-content: center;
 }
 
 .image-section{
     display: grid;
     justify-content: center;
+}
+
+.center{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
 }

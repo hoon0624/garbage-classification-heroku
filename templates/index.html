@@ -3,7 +3,7 @@
     <h2>Upload Your Image</h2>
 </div>
 
-<div>
+<div id=uinf>
     <form id="upload-file" method="post" enctype="multipart/form-data">
         <label for="imageUpload" class="upload-label">
             Upload...
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div>
-            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+            <button type="button" class="btn btn-primary btn-lg predict-btn" id="btn-predict">Predict!</button>
         </div>
     </div>
 
@@ -26,6 +26,13 @@
     <h3 id="result">
         <span> </span>
     </h3>
+
+    <div class="recycle-icon fixed-bottom">
+        <img class="resize-icon" src="{{url_for('static', filename='images/recycleIcon.png')}}" align="middle" />
+    </div>
+    <div class="recycle-bin">
+        <img class="resize-bin" src="{{url_for('static', filename='images/recycleBin.png')}}" align="middle"/>
+    </div>
 
 </div>
 

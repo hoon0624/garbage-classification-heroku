@@ -22,6 +22,10 @@ $(document).ready(function () {
         $('#result').text('');
         $('#result').hide();
         readURL(this);
+
+        var Bin = document.getElementById("uinf");
+        Bin.getElementsByClassName("recycle-bin")[0].style.position = "relative";
+
     });
 
     // Predict
@@ -31,7 +35,6 @@ $(document).ready(function () {
         // Show loading animation
         $(this).hide();
         $('.loader').show();
-
         // Make prediction by calling api /predict
         $.ajax({
             type: 'POST',
