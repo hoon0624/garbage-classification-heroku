@@ -17,6 +17,9 @@ $(document).ready(function () {
         }
     }
     $("#imageUpload").change(function () {
+        var upBtn = document.getElementById("upload-file");
+        upBtn.getElementsByClassName("upload-label")[0].style.margin = "0";
+        
         $('.image-section').show();
         $('#btn-predict').show();
         $('#result').text('');
@@ -25,7 +28,6 @@ $(document).ready(function () {
 
         var Bin = document.getElementById("uinf");
         Bin.getElementsByClassName("recycle-bin")[0].style.position = "relative";
-
     });
 
     // Predict
