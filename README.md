@@ -54,8 +54,8 @@ A few different methods were attempted.
 
 First, Keras was used to create a model with conv1 layer to conv4 layers. However, the model was not complex enough and it was underfitting. 
 
-![conv4](images/conv4.png)
-<img src="images/conv4.png" align="left" width="48" >
+<img src="images/conv4.png" align="left" width="100" >
+
 * conv4 layer model
 
 ![conv4acc](images/conv4acc.png)
